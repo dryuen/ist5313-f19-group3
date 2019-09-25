@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/hot-spots.js"></script>
+		
+	</head>
+	  
+    <body>
+    	<article>
+        	<header>
+            	<h1>Hotspot Activity</h1>
+            </header>
+            
+            <section>
+            	<p>Hover your mouse over each item to learn its French equivalent.</p>
+				
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><p>cat</p></div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><p>horse</p></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><p>dog</p></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><p>bird</p></div>
+					</div>
+				</div>
+				    
+            </section>
+            <section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
+
+        </article>
+    	<footer>
+        </footer>
+    </body>
+</html>
