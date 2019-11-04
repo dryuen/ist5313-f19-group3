@@ -5,7 +5,7 @@
 		<title>Module 1</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<script src="scripts/quiz.js"></script>
 	</head>	
 	<body>
 		<header>
@@ -38,12 +38,38 @@
 						<div class="column content">
 							<h2>Module 1 Quiz</h2>
 								
-								<ol>
-									<li>T/F The Paul Wellstone and Pete Domenici Mental Health Parity and Addiction Equity Act of 2008 required insurance plans that offered mental health coverage to have the same lifetime and annual dollar limits.</li>
-									<li>What is a premium? </li>
-									<li>T/F Prescription drug coverage is an essential health benefit.</li>
-									<li>4.	T/F After 2008, did mental health coverage have to have the same cost sharing rate as the medical coverage?</li>
-								</ol>
+								<form id="quiz" name="quiz">
+									<p>T/F The Paul Wellstone and Pete Domenici Mental Health Parity and Addiction Equity Act of 2008 required insurance plans that offered mental health coverage to have the same lifetime and annual dollar limits.
+									</p>
+										<input type="radio" id="quiz1" name="question1" value="true">True</br>
+										<input type="radio" id="quiz1" name="question1" value="false">False</br>
+										
+									<p>What is a premium? 
+									</p>
+										<input type="radio" id="quiz1" name="question2" value="a">Amount that has to be paid before the insurance will start covering services</br>
+										<input type="radio" id="quiz1" name="question2" value="b">Dollar amount that is paid to the insurance company for insurance coverage.</br>
+										<input type="radio" id="quiz1" name="question2" value="c">Provider that offers mental health services.</br>
+										
+									<p>T/F Prescription drug coverage is an essential health benefit.
+									</p>
+										<input type="radio" id="quiz1" name="question3" value="true">True</br>
+										<input type="radio" id="quiz1" name="question3" value="false">False</br>
+								
+									<p>T/F After 2008, did mental health coverage have to have the same cost sharing rate as the medical coverage?
+									</p>
+										<input type="radio" id="quiz1" name="question4" value="true">True</br>
+										<input type="radio" id="quiz1" name="question4" value="false">False</br>
+										
+									<input id="button" type="button" value="Submit" onclick="check();">
+								</form>
+								
+								<div id="after_submit">
+									<p id="number_correct"></p>
+								
+								</div>
+								
+					
+								
 							
 							
 						
@@ -52,22 +78,7 @@
 				
 				</article>
 			</div>
-			<div id="aside-info">
-				<aside>
-					<header>
-						<p id="aside-title-audio">Audio</p>
-					</header>
-					<!--- put your audio here --->
-					<br/>
-					
-					<header>
-						<p id="aside-title-audio">Captions</p>
-					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
-				</div>
-				</aside>
-			</div>
+			
 		
 		</section>
 		
