@@ -2,9 +2,15 @@
 {
 	display: table-cell;
 	padding: 10px;
-	width: 100px;
+	width: 125px;
+	
 }
 
+.column2 {
+	
+	float: left;
+	
+}
 .hotspot
 {
 	border: solid thin #000000;
@@ -20,6 +26,7 @@
 .hotspot p
 {
 	font-weight: bold;
+	
 }
 
 #output-box
@@ -29,6 +36,7 @@
 	width: 700px;
 	text-align: center;
 	background: #ccccee;
-	
+	float: right;
 	display: none;
+	
 }

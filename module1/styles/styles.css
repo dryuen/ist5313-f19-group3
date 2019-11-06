@@ -144,3 +144,16 @@ audio
 	
 		visibility: hidden;
 }
+
+#nextButton
+{
+
+	float: right;
+
+}
+
+#stockphoto1{
+	
+	align: center;
+	
+}
