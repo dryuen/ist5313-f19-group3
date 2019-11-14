@@ -19,11 +19,13 @@ function startCourse()
 		// then this is the first time we are running the course
         if( !sessionStorage.getItem( "course_started" ) )
         {
-        		// clear the session storage
+        	// clear the session storage
             sessionStorage.clear();
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
-    			sessionStorage.setItem( "course_started", "1" );
+    		sessionStorage.setItem( "course_started", "1" );
+    		sessionStorage.setItem( "topic-1", "unvisited" );
+    		sessionStorage.setItem( "topic-2", "unvisited" );
     			
 			// set the values you want to persist throughout the website here
         }
@@ -63,6 +65,30 @@ function initializeSCORM()
 		// integrate them into your course
 		alert( "Welcome, " + oScorm.get( "cmi.core.student_name" ) + "!" );
 	}
+}
+
+function visitTopic1()
+{
+	
+    sessionStorage.setItem( "topic-1", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-2", "visited" );
+	checkAllVisited();
+}
+
+function checkAllVisited()
+{
+	var t1 = sessionStorage.getItem( "topic-1" );
+	var t2 = sessionStorage.getItem( "topic-2" );
+
+	if( t1 == "visited" && t2 == "visited")
+	{
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+	}		
 }
 
 // This function reports the score from the assessment to the LMS

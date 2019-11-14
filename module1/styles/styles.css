@@ -159,3 +159,13 @@ audio
 	align: center;
 	
 }
+
+#quiz-link
+{
+	display: none;
+}
+
+#certificate-link
+{
+	display: none;
+}
