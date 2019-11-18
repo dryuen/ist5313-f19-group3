@@ -1,4 +1,4 @@
-.column
+.ddcolumn
 {
 	display: table-cell;
 	padding: 50px;
@@ -40,4 +40,8 @@
   -khtml-user-select: none;
   -webkit-user-select: none;
 }
-w
+
+.dand
+{
+	width: 500px;
+}
