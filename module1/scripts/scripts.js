@@ -80,10 +80,59 @@ function visitTopic2()
 	checkAllVisited();
 }
 
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-3", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-4", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-5", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-6", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-7", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-8", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-9", "visited" );
+	checkAllVisited();
+}
+
 function checkAllVisited()
 {
 	var t1 = sessionStorage.getItem( "topic-1" );
 	var t2 = sessionStorage.getItem( "topic-2" );
+	var t2 = sessionStorage.getItem( "topic-3" );
+	var t2 = sessionStorage.getItem( "topic-4" );
+	var t2 = sessionStorage.getItem( "topic-5" );
+	var t2 = sessionStorage.getItem( "topic-6" );
+	var t2 = sessionStorage.getItem( "topic-7" );
+	var t2 = sessionStorage.getItem( "topic-8" );
+	var t2 = sessionStorage.getItem( "topic-9" );
 
 	if( t1 == "visited" && t2 == "visited")
 	{
