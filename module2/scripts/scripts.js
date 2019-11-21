@@ -134,7 +134,9 @@ function checkAllVisited()
 	var t9 = sessionStorage.getItem( "topic-9" );
 	
 
-	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && t4 == "visited" && t5 == "visited" && t6 == "visited" && t7 == "visited" && t8 == "visited" && t9 == "visited")
+	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && 
+	t4 == "visited" && t5 == "visited" && t6 == "visited" && 
+	t7 == "visited" && t8 == "visited" && t9 == "visited")
 	{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 	}		
@@ -144,6 +146,10 @@ function checkAllVisited()
 // This should only be called when the user submits the answers to the quiz
 function reportScores( score )
 {	
+	
+	
+	
+	
 	oScorm.save();
 }
 
