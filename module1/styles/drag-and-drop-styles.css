@@ -11,7 +11,7 @@
 	background: #999999;
 	
 	text-align: center;
-	height: 50px;
+	height: auto;
 	width: 150px;
 	vertical-align: center;
 	cursor: move;
@@ -27,7 +27,7 @@
 .draggerbay
 {
 	border: dashed thin #000000;
-	height: 50px;
+	height: auto;
 	width: 150px;
 	text-align: center;
 	background: #ccccee;
