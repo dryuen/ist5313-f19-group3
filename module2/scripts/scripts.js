@@ -65,6 +65,81 @@ function initializeSCORM()
 	}
 }
 
+function visitTopic1()
+{
+	
+    sessionStorage.setItem( "topic-1", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic2()
+{
+    sessionStorage.setItem( "topic-2", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic3()
+{
+    sessionStorage.setItem( "hot-spots.html", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic4()
+{
+    sessionStorage.setItem( "topic-4", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic5()
+{
+    sessionStorage.setItem( "topic-5", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic6()
+{
+    sessionStorage.setItem( "topic-6", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic7()
+{
+    sessionStorage.setItem( "topic-7", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic8()
+{
+    sessionStorage.setItem( "topic-8", "visited" );
+	checkAllVisited();
+}
+
+function visitTopic9()
+{
+    sessionStorage.setItem( "topic-9", "visited" );
+	checkAllVisited();
+}
+
+
+function checkAllVisited()
+{
+	var t1 = sessionStorage.getItem( "topic-1" );
+	var t2 = sessionStorage.getItem( "topic-2" );
+	var t3 = sessionStorage.getItem( "topic-3" );
+	var t4 = sessionStorage.getItem( "topic-4" );
+	var t5 = sessionStorage.getItem( "topic-5" );
+	var t6 = sessionStorage.getItem( "topic-6" );
+	var t7 = sessionStorage.getItem( "topic-7" );
+	var t8 = sessionStorage.getItem( "topic-8" );
+	var t9 = sessionStorage.getItem( "topic-9" );
+	
+
+	if( t1 == "visited" && t2 == "visited" && t3 == "visited" && t4 == "visited" && t5 == "visited" && t6 == "visited" && t7 == "visited" && t8 == "visited" && t9 == "visited")
+	{
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+	}		
+}
+
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
 function reportScores( score )
