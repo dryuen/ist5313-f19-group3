@@ -26,6 +26,15 @@ function startCourse()
     			sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+    		sessionStorage.setItem("topic-1", "unvisited");
+    		sessionStorage.setItem("topic-2", "unvisited");
+    		sessionStorage.setItem("hot-spots", "unvisited");
+    		sessionStorage.setItem("topic-4", "unvisited");
+    		sessionStorage.setItem("topic-5", "unvisited");
+    		sessionStorage.setItem("topic-6", "unvisited");
+    		sessionStorage.setItem("topic-7", "unvisited");
+    		sessionStorage.setItem("topic-8", "unvisited");
+    		sessionStorage.setItem("topic-9", "unvisited");
         }
 	}
 	
@@ -80,7 +89,7 @@ function visitTopic2()
 
 function visitTopic3()
 {
-    sessionStorage.setItem( "hot-spots.html", "visited" );
+    sessionStorage.setItem( "topic-3", "visited" );
 	checkAllVisited();
 }
 
@@ -92,7 +101,7 @@ function visitTopic4()
 
 function visitTopic5()
 {
-    sessionStorage.setItem( "topic-5", "visited" );
+    sessionStorage.setItem( "hot-spots", "visited" );
 	checkAllVisited();
 }
 
@@ -125,9 +134,9 @@ function checkAllVisited()
 {
 	var t1 = sessionStorage.getItem( "topic-1" );
 	var t2 = sessionStorage.getItem( "topic-2" );
-	var t3 = sessionStorage.getItem( "topic-3" );
-	var t4 = sessionStorage.getItem( "topic-4" );
-	var t5 = sessionStorage.getItem( "topic-5" );
+	var t3 = sessionStorage.getItem( "topic-4" );
+	var t4 = sessionStorage.getItem( "topic-5" );
+	var t5 = sessionStorage.getItem( "hot-spots" );
 	var t6 = sessionStorage.getItem( "topic-6" );
 	var t7 = sessionStorage.getItem( "topic-7" );
 	var t8 = sessionStorage.getItem( "topic-8" );
