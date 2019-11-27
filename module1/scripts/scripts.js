@@ -148,7 +148,7 @@ function reportScores( score )
 	oScorm.set("cmi.core.lesson_status", "passed");
 	
 	oScorm.save();
-
+}
 
 
 function visitCertificate()

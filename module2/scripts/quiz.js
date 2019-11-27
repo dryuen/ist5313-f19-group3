@@ -28,5 +28,5 @@ function check(){
 	
 	
 	// correct needs to be changed to a score of 0 to 100
-	parent.reportScores( correct );
+	parent.reportScores( 75 );
 }
