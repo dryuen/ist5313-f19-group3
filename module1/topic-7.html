@@ -4,8 +4,9 @@
 		<meta charset="utf-8"/>
 		<title>Module 1</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/hot-spots.js"></script>
+		<script src="scripts/scripts.js"></script>
 	</head>	
 	<body onload="javascript:parent.visitTopic7()">
 		
@@ -30,14 +31,42 @@
 								<a href="topic-7.html">Activity 2</a></br>
 								<a href="topic-8.html">Summary</a></br>
 								<a href="topic-9.html" id="quiz-link">Quiz</a></br>
-								<a href="certification.html" id="certificate-link">Certificate</a></br>
+								<a href="certificate.html" id="certificate-link">Certificate</a></br>
 							</nav>
 				
 						
 						</div>
 						<div class="column content">
-							<p>Activity 2 goes here.
-							</p>
+						<section>
+            			<p>Hover your mouse over each item to learn its definition.</p>
+				
+						<div id="hotspots">
+							<div class="column">
+					 		<div id="hs1" class="hotspot" 
+				     			onmouseover="javascript:showText( 1 )"
+				     			onmouseout="javascript:hideOutput()"><p>Essential Health Benefits</p></div> 
+							</div>
+							<div class="column">
+				     		<div id="hs2" class="hotspot" 
+				     			onmouseover="javascript:showText( 2 )"
+				     			onmouseout="javascript:hideOutput()"><p>Parity Laws</p></div>  
+							</div>             
+							<div class="column">        
+				 			<div id="hs3" class="hotspot"
+				     			onmouseover="javascript:showText( 3 )"
+				     			onmouseout="javascript:hideOutput()"><p>Balance Billing</p></div> 
+					
+							</div>
+						</div>
+				    
+           	 			</section>
+            			<section>
+							<div id="output">
+								<div id="output-box">
+								<p id="output-text">asdf</p>
+							</div>
+							</div>
+            			</section>
 							
 							<form method="get" action="topic-8.html">
 								<button type="submit" id="nextButton">Next</button>

@@ -9,20 +9,17 @@ function showText( number )
 	
 	if( number == 1 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le chat";
+		document.getElementById( "output-text" ).innerHTML = "Minimum coverage that all plans must offer.";
 	}
 	else if( number == 2 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le cheval";
+		document.getElementById( "output-text" ).innerHTML = "Legislation that requires insurance companies and providers to treat behavioral health coverage the same as medical coverage.";
 	}
 	else if( number == 3 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le chien";
+		document.getElementById( "output-text" ).innerHTML = "Difference of cost between the what the insurance pays and the provider's cost for the service.";
 	}
-	else if( number == 4 )
-	{
-		document.getElementById( "output-text" ).innerHTML = "l'oiseau";
-	}
+	
 }
 
 function hideOutput()

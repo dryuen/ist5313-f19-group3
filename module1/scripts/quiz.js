@@ -6,7 +6,7 @@ function check(){
 	var question4 = document.quiz.question4.value;
 	var correct = 0;
 	
-	if (question1 == "false") {
+	if (question1 == "b") {
 		correct++;
 	}
 	
@@ -14,11 +14,11 @@ function check(){
 		correct++;
 	}
 	
-	if (question3 == "true") {
+	if (question3 == "a") {
 		correct++;
 	}
 	
-	if (question4 == "true") {
+	if (question4 == "a") {
 		correct++;
 	}
 	
@@ -27,3 +27,11 @@ function check(){
 	
 }
 
+
+
+function processQuiz()
+{
+	var score = 0
+	
+	parent.reportscores(score);
+}

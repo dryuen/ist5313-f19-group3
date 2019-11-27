@@ -154,6 +154,14 @@ audio
 
 }
 
+#center{
+	
+	position: center;
+  	right: 0px;
+  	width: 300px;
+  	padding: 40px;
+}
+
 #stockphoto1{
 	
 	align: center;
