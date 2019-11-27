@@ -1,32 +1,29 @@
-function check(){
+function processQuiz(){
 	
-	var question1 = document.quiz.question1.value;
-	var question2 = document.quiz.question2.value;
-	var question3 = document.quiz.question3.value;
-	var question4 = document.quiz.question4.value;
-	var correct = 0;
+	var answer1 = document.forms.quiz1.value;
+	var answer2 = document.forms.quiz1.value;
+	var answer3 = document.forms.quiz1.value;
+	var answer4 = document.forms.quiz1.value;
+	var counter= 0;
 	
-	if (question1 == "b") {
-		correct++;
+	if (answer1 == "1") {
+		counter=counter+1;
 	}
 	
-	if (question2 == "b") {
-		correct++;
+	if (answer2 == "1") {
+		counter=counter+1;
 	}
 	
-	if (question3 == "a") {
-		correct++;
+	if (answer3 == "0") {
+		counter=counter+1;
 	}
 	
-	if (question4 == "a") {
-		correct++;
+	if (answer4 == "0") {
+		counter=counter+1;
 	}
 	
-	document.getElementById("after_submit").style.visibility="visible";
-	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
-	
+	alert("You got " + counter + " questions correct!");
 }
-
 
 
 function processQuiz()

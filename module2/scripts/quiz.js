@@ -1,26 +1,32 @@
-function check(){
+function processQuiz(){
 	
-	var question1 = document.quiz.question1.value;
-	var question2 = document.quiz.question2.value;
-	var question3 = document.quiz.question3.value;
-	var correct = 0;
+	var answer1 = document.forms.quiz1.value;
+	var answer2 = document.forms.quiz1.value;
+	var answer3 = document.forms.quiz1.value;
+	var answer4 = document.forms.quiz1.value;
+	var counter= 0;
 	
-	if (question1 == "b") {
-		correct++;
+	if (answer1 == "1") {
+		counter=counter+1;
 	}
 	
-	if (question2 == "false") {
-		correct++;
+	if (answer2 == "1") {
+		counter=counter+1;
 	}
 	
-	if (question3 == "a") {
-		correct++;
+	if (answer3 == "0") {
+		counter=counter+1;
 	}
 	
+	if (answer4 == "0") {
+		counter=counter+1;
+	}
+	
+	alert("You got " + counter + " questions correct!");
+}	
 	
 	
-	document.getElementById("after_submit").style.visibility="visible";
-	document.getElementById("number_correct").innerHTML = "You got " + correct + " correct.";
+	
 	
 	
 	// you also need to check of correct is greater or equal to some passing scoring
@@ -28,5 +34,9 @@ function check(){
 	
 	
 	// correct needs to be changed to a score of 0 to 100
-	parent.reportScores( 75 );
+function processQuiz()
+{
+	var score = 0
+	
+	parent.reportscores(75);
 }

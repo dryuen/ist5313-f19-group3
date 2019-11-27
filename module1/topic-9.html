@@ -38,35 +38,32 @@
 						<div class="column content">
 							<h2>Module 1 Quiz</h2>
 								
-								<form id="quiz" name="quiz">
-									<p>1. T/F The Paul Wellstone and Pete Domenici Mental Health Parity and Addiction Equity Act of 2008 required insurance plans that offered mental health coverage to have the same lifetime and annual dollar limits.
-									</p>
-										<input type="radio" id="quiz1" name="question1" value="a">True</br>
-										<input type="radio" id="quiz1" name="question1" value="b">False</br>
+								<form id="quiz1" name="quiz1" action="javascript:processQuiz()">
+									<label for="question1">1. T/F The Paul Wellstone and Pete Domenici Mental Health Parity and Addiction Equity Act of 2008 required insurance plans that offered mental health coverage to have the same lifetime and annual dollar limits.
+									</label></br>
+										<input type="radio" id="question1" name="question1" value="0">True</br>
+										<input type="radio" id="question1" name="question1" value="1">False</br>
 										
-									<p>2. What is a premium? 
-									</p>
-										<input type="radio" id="quiz1" name="question2" value="a">Amount that has to be paid before the insurance will start covering services</br>
-										<input type="radio" id="quiz1" name="question2" value="b">Dollar amount that is paid to the insurance company for insurance coverage.</br>
-										<input type="radio" id="quiz1" name="question2" value="c">Provider that offers mental health services.</br>
+									<label for="question2">2. What is a premium? 
+									</label></br>
+										<input type="radio" id="question2" name="question2" value="0">Amount that has to be paid before the insurance will start covering services</br>
+										<input type="radio" id="question2" name="question2" value="1">Dollar amount that is paid to the insurance company for insurance coverage.</br>
+										<input type="radio" id="question2" name="question2" value="2">Provider that offers mental health services.</br>
 										
-									<p>3. T/F Prescription drug coverage is an essential health benefit.
-									</p>
-										<input type="radio" id="quiz1" name="question3" value="a">True</br>
-										<input type="radio" id="quiz1" name="question3" value="b">False</br>
+									<label for="question3">3. T/F Prescription drug coverage is an essential health benefit.
+									</label></br>
+										<input type="radio" id="question3" name="question3" value="0">True</br>
+										<input type="radio" id="question3" name="question3" value="1">False</br>
 								
-									<p>4. T/F After 2008, did mental health coverage have to have the same cost sharing rate as the medical coverage?
-									</p>
-										<input type="radio" id="quiz1" name="question4" value="a">True</br>
-										<input type="radio" id="quiz1" name="question4" value="b">False</br>
+									<label for="question4">4. T/F After 2008, did mental health coverage have to have the same cost sharing rate as the medical coverage?
+									</label></br>
+										<input type="radio" id="question4" name="question4" value="0">True</br>
+										<input type="radio" id="question4" name="question4" value="1">False</br>
 										
-									<input id="button" type="button" value="Submit" onclick="check();">
+									<input type="submit" value="Submit Answers" onclick="check();">
 								</form>
 								
-								<div id="after_submit">
-									<p id="number_correct"></p>
 								
-								</div>
 								
 					
 								
