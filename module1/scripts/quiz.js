@@ -28,5 +28,5 @@ function processQuiz(){
 		alert("You got " + counter + " questions correct! You failed.");
 
 	
-	parent.reportscores(counter * 25);
+	parent.reportScores(counter * 25);
 }
