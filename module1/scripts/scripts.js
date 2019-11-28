@@ -154,7 +154,11 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.min", 0);
 	oScorm.set("cmi.core.score.max", 100);
 	
-	oScorm.set("cmi.core.lesson_status", "passed");
+	if( score >= 80 )
+		oScorm.set("cmi.core.lesson_status", "passed");
+	else
+		oScorm.set("cmi.core.lesson_status", "failed");
+	
 	
 	oScorm.save();
 }
@@ -162,7 +166,7 @@ function reportScores( score )
 function visitCertificate()
 {
 	var learner_name = oScorm.get("cmi.core.student_name");
-	document.getElementById("content-frame").contentWindow.document.getElementbyId("user-name").innerHTML=learner_name;
+	document.getElementbyId("user-name").innerHTML=learner_name;
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
