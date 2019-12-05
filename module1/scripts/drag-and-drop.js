@@ -9,6 +9,7 @@ var aDraggerBays = new Array( 4 );
 // initialize the dragger bays to -1.  -1 means that there is no dragger there.
 for( var i = 0; i < aDraggerBays.length; i = i + 1 )
 {
+
 	aDraggerBays[ i ] = -1;
 }
 
