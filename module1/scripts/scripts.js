@@ -154,7 +154,7 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.min", 0);
 	oScorm.set("cmi.core.score.max", 100);
 	
-	if( score >= 80 )
+	if( score >= 75 )
 		oScorm.set("cmi.core.lesson_status", "passed");
 	else
 		oScorm.set("cmi.core.lesson_status", "failed");
