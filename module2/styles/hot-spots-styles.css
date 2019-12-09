@@ -2,15 +2,16 @@
 {
 	display: table-cell;
 	padding: 10px;
-	width: 125px;
+	width: auto;
 	
 }
 
-.column2 {
+/*.column2 {
 	
 	float: left;
 	
-}
+}*/
+
 .hotspot
 {
 	border: solid thin #000000;
@@ -32,11 +33,10 @@
 #output-box
 {
 	border: dashed thin #000000;
-	height: 100px;
-	width: 700px;
+	height: 125px;
+	width: 685px;
 	text-align: center;
 	background: #ccccee;
-	float: right;
 	display: none;
 	
 }
