@@ -17,20 +17,19 @@ body
 #aside-info
 {
 	float: left;
-	width: 200px;
+	width: 150px;
 	vertical-align: top;
 	padding-left: 10px;
 }
 
-/*	
-#main-content
+	
+.mainImg
 {
-	height: 368px;
-	padding: 10px;
-	margin: 10px;
-	width: 75%;
+	height: 225px;
+	width: 400px;
+	align: left;
 }
-*/
+
 
 header
 {
@@ -39,7 +38,7 @@ header
 	padding-bottom: 0px;
 	border-bottom: double;
 	height: 30%;
-	width: 80%;
+	width: 75%;
 	background-color: #7ec4cf;
 }
 
@@ -54,8 +53,8 @@ h1{
 #logo{
 	display: inline-block;
 	vertical-align: middle;
-	height: 125px;
-	width: 125px;
+	height: 100px;
+	width: 100px;
 	margin: 10px;
 	
 }
@@ -70,15 +69,15 @@ h1{
 {
 	padding: 10px;
 	margin-left: 10px;
-	width: 60%;
+	width: 50%;
 	/*float: left;	*/
 	background-color: #d1cfe2;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 .content h2{
 	font-weight: bold;
-	font-size: 26px;
+	font-size: 20px;
 	color: #52b2cf;
 	border-bottom: double;
 	border-color: black;
@@ -130,11 +129,11 @@ a{
 	
 #transcript
 {
-	color: green;
+	color: black;
 	font-size: 12px;
 	overflow: auto;
 	height: 321px;
-	width: 233px;
+	width: 200px;
 }
 
 audio

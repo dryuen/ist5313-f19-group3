@@ -2,7 +2,7 @@
 {
 	display: table-cell;
 	padding: 10px;
-	width: 250px;
+	width: auto;
 }
 
 .hotspot
@@ -25,10 +25,10 @@
 #output-box
 {
 	border: dashed thin #000000;
-	height: 100px;
-	width: 700px;
+	height: 150px;
+	width: 525px;
 	text-align: center;
 	background: #ccccee;
-	
+	/*position: fixed;*/
 	display: none;
 }
