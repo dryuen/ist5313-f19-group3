@@ -23,7 +23,10 @@ function processQuiz(){
 	}
 	
 	if( counter >= 3 )
+	{
 		alert("You got " + counter + " questions correct! You passed.");
+		document.getElementById( "certificate-link" ).style.display = "inline";
+	}
 	else
 		alert("You got " + counter + " questions correct! You failed.");
 
